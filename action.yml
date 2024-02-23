@@ -1,5 +1,5 @@
 name: Clear cache by prefix
-description: A Github action to delete the cache whose key starts with a specific prefix
+description: Delete all caches whose keys starts with a specific prefix. This can be useful to clear the cache of a feature branch after it is merged for example.
 
 branding:
   icon: archive
