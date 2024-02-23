@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/TheAngularGuy/clear-cache-by-prefix-action/compare/v1.0.2...v1.0.3) (2024-02-23)
+
+
+### Bug Fixes
+
+* loggin cleared size in the correct unit ([a52f13c](https://github.com/TheAngularGuy/clear-cache-by-prefix-action/commit/a52f13c4c2a8598a7ce9c1fd989955b39074b74d))
+
 ## [1.0.2](https://github.com/TheAngularGuy/clear-cache-by-prefix-action/compare/v1.0.1...v1.0.2) (2024-02-23)
 
 
