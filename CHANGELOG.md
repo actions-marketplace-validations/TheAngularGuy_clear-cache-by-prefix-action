@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/TheAngularGuy/clear-cache-by-prefix-action/compare/v1.0.4...v1.0.5) (2024-02-23)
+
+
+### Other
+
+* edit readme ([8ec2e2f](https://github.com/TheAngularGuy/clear-cache-by-prefix-action/commit/8ec2e2f4935a716556e28c45d11c0b291f8de314))
+
 ## [1.0.4](https://github.com/TheAngularGuy/clear-cache-by-prefix-action/compare/v1.0.3...v1.0.4) (2024-02-23)
 
 
