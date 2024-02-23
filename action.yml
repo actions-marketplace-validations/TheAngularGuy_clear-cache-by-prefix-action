@@ -1,6 +1,10 @@
 name: Clear cache by prefix
 description: A Github action to delete the cache whose key starts with a specific prefix
 
+branding:
+  icon: archive
+  color: purple
+
 inputs:
   cache-prefix:
     description: The prefix of the cache keys to delete
