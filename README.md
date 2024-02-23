@@ -1,6 +1,6 @@
 # clear-cache-by-prefix-action
 
-A Github action to delete the cache whose key starts with a specific prefix.
+Delete all caches whose keys starts with a specific prefix.
 This can be useful to clear the cache of a feature branch after it is merged for example.
 
 ## Usage
@@ -28,9 +28,14 @@ jobs:
 | github-token         | The GitHub token to use                | Yes      | none    |
 | cache-prefix         | The prefix of the cache keys to delete | Yes      | none    |
 
-## Outputs
+> [!TIP]
+> To delete all chaches set the `cache-prefix` input to an empty string `''`.
 
-None.
+
+## Permissions
+
+Make sure to give the permissions for actions write in your job.
+
 
 ## Contributing
 
