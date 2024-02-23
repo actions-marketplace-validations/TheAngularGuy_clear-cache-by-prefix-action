@@ -17,8 +17,12 @@ runs:
       with:
         github-token: ${{ inputs.github-token }}
         script: |
-          const caches = await github.rest.actions.getActionsCacheList({
+          const response = await github.rest.actions.getActionsCacheList({
             owner: context.repo.owner,
             repo: context.repo.repo,
           });
-          console.log(caches);
+          console.log(JSON.stringify(response));
+          const caches = response.data.action_caches;
+          for (const cache of caches) {
+            console.log(JSON.stringify(cache));
+          }
