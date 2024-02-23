@@ -6,7 +6,7 @@ This can be useful to clear the cache of a feature branch after it is merged for
 ## Usage
 
 ```yaml
-On:
+on:
   pull_request:
     types: [closed]
 permissions:
