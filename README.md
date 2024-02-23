@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clear caches
-        uses: theAngularGuy/clear-cache-by-prefix-action@v1.0.0
+        uses: theAngularGuy/clear-cache-by-prefix-action@v1.0.3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           cache-prefix: my-feature-branch-
