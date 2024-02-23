@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/TheAngularGuy/clear-cache-by-prefix-action/compare/v1.0.3...v1.0.4) (2024-02-23)
+
+
+### Other
+
+* adding branding ([27856fe](https://github.com/TheAngularGuy/clear-cache-by-prefix-action/commit/27856fea63b29d846c5151c7532d11b5aa288ae0))
+
 ## [1.0.3](https://github.com/TheAngularGuy/clear-cache-by-prefix-action/compare/v1.0.2...v1.0.3) (2024-02-23)
 
 
