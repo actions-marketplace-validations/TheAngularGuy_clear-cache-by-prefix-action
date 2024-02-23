@@ -1,0 +1,24 @@
+name: Clear cache by prefix
+description: A Github action to delete the cache whose key starts with a specific prefix
+
+inputs:
+  cache-prefix:
+    description: The prefix of the cache keys to delete
+    required: true
+  github-token:
+    description: The GitHub token to use
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Clear cache
+      uses: actions/github-script@v7
+      with:
+        github-token: ${{ inputs.github-token }}
+        script: |
+          const caches = await github.rest.actions.getActionsCacheList({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+          });
+          console.log(caches);
