@@ -9,8 +9,7 @@ This can be useful to clear the cache of a feature branch after it is merged for
 on:
   pull_request:
     types: [closed]
-permissions:
-  actions: write
+
 jobs:
   clear-caches:
     runs-on: ubuntu-latest
