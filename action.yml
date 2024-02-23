@@ -21,8 +21,18 @@ runs:
             owner: context.repo.owner,
             repo: context.repo.repo,
           });
-          console.log(JSON.stringify(response));
-          const caches = response.data.action_caches;
+          let totalSizeCleared = 0;
+          const caches = response.data.actions_caches;
           for (const cache of caches) {
-            console.log(JSON.stringify(cache));
+            const key = cache.key;
+            if (key.startsWith('${{ inputs.cache-prefix }}')) {
+              const deleteResponse = await github.rest.actions.deleteActionsCacheByKey({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                key,
+              });
+              console.log(`Deleted cache with key: ${key}, size: ${cache.size_in_bytes}`);
+              totalSizeCleared += cache.size_in_bytes;
+            }
           }
+          console.log(`Total size cleared: ${(totalSizeCleared / 1024).toFixed(2)} bytes`);
